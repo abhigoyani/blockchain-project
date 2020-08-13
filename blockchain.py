@@ -8,7 +8,7 @@ def add_value(transaction_amount, last_transaction=[1]):
     blockchain.append([last_transaction, transaction_amount])
 
 
-def hash_block():
+def hash_block(last_block):
     return "-".join([str(last_block[key]) for key in last_block])
 
 
